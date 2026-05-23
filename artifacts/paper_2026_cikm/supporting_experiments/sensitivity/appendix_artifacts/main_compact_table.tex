@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering\small
+\caption{Sensitivity of \trustrag default $(\alpha,\beta,\rho)=(0.7,0.3,0.8)$. Retrieval columns from Phase~2 (210 queries); downstream columns from Phase~5 (35 queries, GPT-4o judge, \anchorrag\ only). All metrics higher is better.}
+\label{tab:sensitivity-main}
+\begin{tabular}{lcccccc}
+\toprule
+Setting & Avg Rel & Avg $\strust$@$k$ & HT Ratio & HT Cite & Support & Utility \\
+\midrule
+$\alpha{=}0.9,\beta{=}0.1$ & 0.423 & 0.743 & 0.516 & 0.596 & 0.835 & 0.707 \\
+$\alpha{=}0.7,\beta{=}0.3$ \emph{(default)} & 0.409 & 0.768 & 0.687 & 0.683 & 0.710 & 0.686 \\
+$\alpha{=}0.5,\beta{=}0.5$ & 0.386 & 0.783 & 0.824 & 0.899 & 0.778 & 0.707 \\
+$\rho{=}1.0$ (off) & 0.416 & 0.776 & 0.690 & 0.658 & 0.802 & 0.690 \\
+$\rho{=}0.6$ & 0.395 & 0.763 & 0.674 & 0.690 & 0.739 & 0.701 \\
+\bottomrule
+\end{tabular}
+\end{table}

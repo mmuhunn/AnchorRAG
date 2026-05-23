@@ -1,0 +1,10 @@
+methods:
+  - vanilla_rag
+  - mmr_rag
+  - graph_retrieval
+  - r2ag
+  - reclaim
+  - grag
+  - trustrag_anchor
+
+reference_method: trustrag_anchor

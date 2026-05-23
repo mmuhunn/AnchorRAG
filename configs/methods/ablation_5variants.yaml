@@ -1,0 +1,9 @@
+variants:
+  - vanilla_rag
+  - wo_trust
+  - wo_anchor
+  - wo_diversity
+  - trustrag_anchor
+
+extra_variant:
+  - multi_anchor

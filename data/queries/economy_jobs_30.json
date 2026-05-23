@@ -1,0 +1,122 @@
+[
+  {
+    "id": "eco-01",
+    "q": "What conflicting evidence exists on whether recent economic growth has broadly improved wages, employment, and household finances?"
+  },
+  {
+    "id": "eco-02",
+    "q": "How do different political perspectives interpret the causes of inflation and the effectiveness of government responses?"
+  },
+  {
+    "id": "eco-03",
+    "q": "What are the main arguments for and against raising the minimum wage, and what evidence is used to support each side?"
+  },
+  {
+    "id": "eco-04",
+    "q": "How do various sources interpret the relationship between unemployment, job creation, and government economic policy?"
+  },
+  {
+    "id": "eco-05",
+    "q": "What conflicting evidence is presented on whether tax cuts stimulate broad job growth and investment?"
+  },
+  {
+    "id": "eco-06",
+    "q": "How do political actors disagree on the trade-offs between deficit reduction and economic stimulus spending?"
+  },
+  {
+    "id": "eco-07",
+    "q": "What are the most contested arguments regarding globalization and trade as a source of job losses versus as a source of consumer and productivity gains?"
+  },
+  {
+    "id": "eco-08",
+    "q": "How do commentators differ in attributing manufacturing decline to trade issues, automation, or policy failures?"
+  },
+  {
+    "id": "eco-09",
+    "q": "What evidence is used to argue that labor shortages reflect excessive worker bargaining power versus structural mismatches in the labor market?"
+  },
+  {
+    "id": "eco-10",
+    "q": "How do different ideological perspectives set the balance between market freedom, worker protections, and government economic intervention?"
+  },
+  {
+    "id": "eco-11",
+    "q": "What conflicting statistical evidence and representative arguments do each side offer in the debate over whether automation creates jobs or causes technological unemployment?"
+  },
+  {
+    "id": "eco-12",
+    "q": "How do different political ideologies assess the effectiveness of universal basic income as a solution to automation-driven unemployment?"
+  },
+  {
+    "id": "eco-13",
+    "q": "What conflicting empirical evidence do credible economic analysis sources present on the effect of government trade tariffs on protecting domestic jobs?"
+  },
+  {
+    "id": "eco-14",
+    "q": "How do various sources interpret the role of corporate taxes in promoting social equity versus driving away business investment?"
+  },
+  {
+    "id": "eco-15",
+    "q": "What are the contrasting views on the role of monetary policy in controlling inflation versus stimulating economic growth?"
+  },
+  {
+    "id": "eco-16",
+    "q": "How do political perspectives differ on the necessity and impact of government subsidies to declining industries?"
+  },
+  {
+    "id": "eco-17",
+    "q": "What evidence is used to argue that gig economy jobs provide flexible work opportunities versus that they are exploitative with inadequate labor rights?"
+  },
+  {
+    "id": "eco-18",
+    "q": "How do commentators differ in assessing the impact of immigration on domestic job markets and wage levels?"
+  },
+  {
+    "id": "eco-19",
+    "q": "What are the main arguments for and against deregulating financial markets to stimulate economic growth, and how are these claims supported?"
+  },
+  {
+    "id": "eco-20",
+    "q": "How do different ideological views assess the effectiveness of wealth redistribution policies in reducing economic inequality without hindering economic growth?"
+  },
+  {
+    "id": "eco-21",
+    "q": "What conflicting evidence exists on whether austerity measures during economic downturns accelerate recovery or deepen recession?"
+  },
+  {
+    "id": "eco-22",
+    "q": "What are the contrasting arguments on whether student loan forgiveness is an effective economic stimulus or a form of regressive wealth transfer?"
+  },
+  {
+    "id": "eco-23",
+    "q": "How do commentators differ on whether remote work trends have strengthened or weakened urban economies and commercial real estate markets?"
+  },
+  {
+    "id": "eco-24",
+    "q": "What conflicting evidence exists on whether the housing price crisis is primarily caused by zoning restrictions or speculative investment?"
+  },
+  {
+    "id": "eco-25",
+    "q": "How do different ideological perspectives assess whether \"right-to-work\" laws benefit workers through increased employment or harm them by suppressing wages and union power?"
+  },
+  {
+    "id": "eco-26",
+    "q": "What conflicting arguments exist on whether expanding the Earned Income Tax Credit (EITC) is a more effective anti-poverty tool than raising the minimum wage?"
+  },
+  {
+    "id": "eco-27",
+    "q": "What conflicting evidence exists on whether public infrastructure investment raises long-term productivity or crowds out private capital?"
+  },
+  {
+    "id": "eco-28",
+    "q": "What are the competing arguments on whether central bank independence from political oversight stabilizes monetary policy or insulates it from democratic accountability?"
+  },
+  {
+    "id": "eco-29",
+    "q": "How do various sources interpret whether supply chain reshoring and industrial policy represent sound economic strategy or costly protectionist overreach?"
+  },
+  {
+    "id": "eco-30",
+    "q": "What are the conflicting views on whether corporate share buybacks contribute more to short-term shareholder gains or long-term economic growth, and what key metrics support each side?"
+  }
+]

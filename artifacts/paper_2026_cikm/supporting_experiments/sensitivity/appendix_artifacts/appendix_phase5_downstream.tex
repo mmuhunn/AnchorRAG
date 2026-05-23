@@ -1,0 +1,25 @@
+\begin{table*}[t]
+\centering\small
+\caption{Downstream sensitivity (Phase~5, 35 stratified queries, \anchorrag\ only). HT Cite and Backbone Trust are upstream of generation so are identical across judges; Utility is judge-dependent. Higher is better.}
+\label{tab:appendix-phase5}
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{2}{c}{Trust (judge-independent)} & \multicolumn{2}{c}{GPT-4o judge} & \multicolumn{2}{c}{Claude judge} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+Config & HT Cite & Backbone Trust & Support & Utility & Support & Utility \\
+\midrule
+default \emph{(default)} & 0.683 & 0.685 & 0.710 & 0.686 & 0.616 & 0.532 \\
+ab\_0.9\_0.1 & 0.596 & 0.594 & 0.835 & 0.707 & 0.795 & 0.563 \\
+ab\_0.5\_0.5 & 0.899 & 0.893 & 0.778 & 0.707 & 0.752 & 0.489 \\
+rho\_1.0 & 0.658 & 0.646 & 0.802 & 0.690 & 0.768 & 0.539 \\
+rho\_0.6 & 0.690 & 0.696 & 0.739 & 0.701 & 0.739 & 0.539 \\
+gamma\_0.5 & 0.683 & 0.689 & 0.773 & 0.711 & 0.708 & 0.548 \\
+gamma\_0.8 & 0.676 & 0.700 & 0.643 & 0.700 & 0.679 & 0.525 \\
+anchor\_relevance\_heavy & 0.679 & 0.677 & 0.765 & 0.709 & 0.702 & 0.544 \\
+anchor\_support\_heavy & 0.699 & 0.710 & 0.685 & 0.687 & 0.677 & 0.537 \\
+anchor\_no\_support & 0.696 & 0.722 & 0.731 & 0.706 & 0.669 & 0.529 \\
+tau\_anchor\_0.70 & 0.659 & 0.668 & 0.692 & 0.704 & 0.639 & 0.534 \\
+tau\_anchor\_0.85 & 0.657 & 0.652 & 0.757 & 0.679 & 0.735 & 0.553 \\
+\bottomrule
+\end{tabular}
+\end{table*}

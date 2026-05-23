@@ -1,0 +1,115 @@
+{
+  "phase": "phase5_eval",
+  "judge": "gpt4o",
+  "model": "gpt-4o-2024-08-06",
+  "runs": [
+    {
+      "name": "default",
+      "judge": "gpt4o",
+      "model": "gpt-4o-2024-08-06",
+      "out_jsonl": "phase5_downstream/evals_gpt4o/default.jsonl",
+      "out_csv": "phase5_downstream/evals_gpt4o/default.csv",
+      "rc": 0,
+      "elapsed_sec": 1.8346569538116455
+    },
+    {
+      "name": "ab_0.9_0.1",
+      "judge": "gpt4o",
+      "model": "gpt-4o-2024-08-06",
+      "out_jsonl": "phase5_downstream/evals_gpt4o/ab_0.9_0.1.jsonl",
+      "out_csv": "phase5_downstream/evals_gpt4o/ab_0.9_0.1.csv",
+      "rc": 0,
+      "elapsed_sec": 348.41809153556824
+    },
+    {
+      "name": "ab_0.5_0.5",
+      "judge": "gpt4o",
+      "model": "gpt-4o-2024-08-06",
+      "out_jsonl": "phase5_downstream/evals_gpt4o/ab_0.5_0.5.jsonl",
+      "out_csv": "phase5_downstream/evals_gpt4o/ab_0.5_0.5.csv",
+      "rc": 0,
+      "elapsed_sec": 325.8242359161377
+    },
+    {
+      "name": "rho_1.0",
+      "judge": "gpt4o",
+      "model": "gpt-4o-2024-08-06",
+      "out_jsonl": "phase5_downstream/evals_gpt4o/rho_1.0.jsonl",
+      "out_csv": "phase5_downstream/evals_gpt4o/rho_1.0.csv",
+      "rc": 0,
+      "elapsed_sec": 351.38278245925903
+    },
+    {
+      "name": "rho_0.6",
+      "judge": "gpt4o",
+      "model": "gpt-4o-2024-08-06",
+      "out_jsonl": "phase5_downstream/evals_gpt4o/rho_0.6.jsonl",
+      "out_csv": "phase5_downstream/evals_gpt4o/rho_0.6.csv",
+      "rc": 0,
+      "elapsed_sec": 365.1672570705414
+    },
+    {
+      "name": "gamma_0.5",
+      "judge": "gpt4o",
+      "model": "gpt-4o-2024-08-06",
+      "out_jsonl": "phase5_downstream/evals_gpt4o/gamma_0.5.jsonl",
+      "out_csv": "phase5_downstream/evals_gpt4o/gamma_0.5.csv",
+      "rc": 0,
+      "elapsed_sec": 434.01849722862244
+    },
+    {
+      "name": "gamma_0.8",
+      "judge": "gpt4o",
+      "model": "gpt-4o-2024-08-06",
+      "out_jsonl": "phase5_downstream/evals_gpt4o/gamma_0.8.jsonl",
+      "out_csv": "phase5_downstream/evals_gpt4o/gamma_0.8.csv",
+      "rc": 0,
+      "elapsed_sec": 408.2616927623749
+    },
+    {
+      "name": "anchor_relevance_heavy",
+      "judge": "gpt4o",
+      "model": "gpt-4o-2024-08-06",
+      "out_jsonl": "phase5_downstream/evals_gpt4o/anchor_relevance_heavy.jsonl",
+      "out_csv": "phase5_downstream/evals_gpt4o/anchor_relevance_heavy.csv",
+      "rc": 0,
+      "elapsed_sec": 352.6245276927948
+    },
+    {
+      "name": "anchor_support_heavy",
+      "judge": "gpt4o",
+      "model": "gpt-4o-2024-08-06",
+      "out_jsonl": "phase5_downstream/evals_gpt4o/anchor_support_heavy.jsonl",
+      "out_csv": "phase5_downstream/evals_gpt4o/anchor_support_heavy.csv",
+      "rc": 0,
+      "elapsed_sec": 438.3340537548065
+    },
+    {
+      "name": "anchor_no_support",
+      "judge": "gpt4o",
+      "model": "gpt-4o-2024-08-06",
+      "out_jsonl": "phase5_downstream/evals_gpt4o/anchor_no_support.jsonl",
+      "out_csv": "phase5_downstream/evals_gpt4o/anchor_no_support.csv",
+      "rc": 0,
+      "elapsed_sec": 366.16031765937805
+    },
+    {
+      "name": "tau_anchor_0.70",
+      "judge": "gpt4o",
+      "model": "gpt-4o-2024-08-06",
+      "out_jsonl": "phase5_downstream/evals_gpt4o/tau_anchor_0.70.jsonl",
+      "out_csv": "phase5_downstream/evals_gpt4o/tau_anchor_0.70.csv",
+      "rc": 0,
+      "elapsed_sec": 363.9241578578949
+    },
+    {
+      "name": "tau_anchor_0.85",
+      "judge": "gpt4o",
+      "model": "gpt-4o-2024-08-06",
+      "out_jsonl": "phase5_downstream/evals_gpt4o/tau_anchor_0.85.jsonl",
+      "out_csv": "phase5_downstream/evals_gpt4o/tau_anchor_0.85.csv",
+      "rc": 0,
+      "elapsed_sec": 366.48399901390076
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "speech-01",
+    "q": "What evidence is used to argue that content moderation reduces harm versus suppresses legitimate speech?"
+  },
+  {
+    "id": "speech-02",
+    "q": "How do various sources interpret evidence on deplatforming and its effects on extremist activity or the spread of misinformation?"
+  },
+  {
+    "id": "speech-03",
+    "q": "What are the main arguments for and against restrictions on hate speech, and what evidence is used to support each side?"
+  },
+  {
+    "id": "speech-04",
+    "q": "How do commentators differ in interpreting the impact of campus speech policies on academic freedom and student safety?"
+  },
+  {
+    "id": "speech-05",
+    "q": "What evidence is used to argue whether government pressure on platforms has a chilling effect on speech?"
+  },
+  {
+    "id": "speech-06",
+    "q": "How do different perspectives assess the role of private platforms versus public regulation in shaping speech norms?"
+  },
+  {
+    "id": "speech-07",
+    "q": "What conflicting evidence exists on whether misinformation labeling improves or polarizes public discourse?"
+  },
+  {
+    "id": "speech-08",
+    "q": "How do sources interpret the trade-offs between rapid content moderation and viewpoint neutrality?"
+  },
+  {
+    "id": "speech-09",
+    "q": "What evidence is cited on the impact of algorithmic amplification on controversial speech?"
+  },
+  {
+    "id": "speech-10",
+    "q": "How do ideological perspectives set the balance between freedom of speech and protection from harassment or threats?"
+  },
+  {
+    "id": "speech-11",
+    "q": "What constitutional interpretations do various sources offer on whether social media bans on politicians are consistent with free speech principles?"
+  },
+  {
+    "id": "speech-12",
+    "q": "What conflicting evidence exists on the role of free speech in exacerbating or mitigating political polarization?"
+  },
+  {
+    "id": "speech-13",
+    "q": "How do commentators differ in assessing the relationship between free speech and national security concerns?"
+  },
+  {
+    "id": "speech-14",
+    "q": "What contrasting cases do the technology sector and human rights advocates present on the efficiency and potential bias risks of deploying AI in online speech moderation?"
+  },
+  {
+    "id": "speech-15",
+    "q": "What evidence is cited on the impact of content moderation on the ability of marginalized communities to participate in online discourse?"
+  },
+  {
+    "id": "speech-16",
+    "q": "How do different ideological groups differ in what they emphasize regarding whether anonymity protects free speech or enables harmful behavior?"
+  },
+  {
+    "id": "speech-17",
+    "q": "What conflicting perspectives exist on the effectiveness of international regulation versus domestic policy in governing online speech across borders?"
+  },
+  {
+    "id": "speech-18",
+    "q": "How do sources interpret the role of cultural context in shaping norms and policies regarding free speech in digital spaces?"
+  },
+  {
+    "id": "speech-19",
+    "q": "What evidence is used to argue that campus free speech zones support or hinder the open exchange of ideas?"
+  },
+  {
+    "id": "speech-20",
+    "q": "How do various sources assess the impact of misinformation on democratic processes and the role of free speech in protecting or undermining those processes?"
+  },
+  {
+    "id": "speech-21",
+    "q": "How do different sides define \"digital accountability\" differently in the debate over repealing or reforming Section 230 liability protections?"
+  },
+  {
+    "id": "speech-22",
+    "q": "Is corporate advertiser boycotting of social media a legitimate form of market pressure or a form of indirect censorship? Describe the various economic and political perspectives on this issue."
+  },
+  {
+    "id": "speech-23",
+    "q": "What are the main arguments for and against requiring social media companies to provide algorithmic transparency, and what evidence is used to support each position?"
+  },
+  {
+    "id": "speech-24",
+    "q": "How do commentators differ in assessing whether speaker cancellations or uninvitations at public universities represent a free speech crisis or appropriate institutional discretion?"
+  },
+  {
+    "id": "speech-25",
+    "q": "Where do high-credibility security sources and privacy advocates find common ground on the tension between privacy protections offered by encrypted messaging and the risk of criminal exploitation?"
+  },
+  {
+    "id": "speech-26",
+    "q": "How do different ideological perspectives assess whether anti-SLAPP laws and other legal protections for journalists sufficiently protect investigative reporting on powerful institutions?"
+  },
+  {
+    "id": "speech-27",
+    "q": "What evidence is used to argue that ownership concentration in media and social media platforms threatens diversity in public discourse or has no meaningful impact?"
+  },
+  {
+    "id": "speech-28",
+    "q": "What conflicting perspectives exist on the impact of proposals to designate social media platforms as \"common carriers\" on free speech and corporate editorial rights?"
+  },
+  {
+    "id": "speech-29",
+    "q": "What are the main arguments for and against treating online doxxing and coordinated harassment campaigns as regulable speech, and what evidence is cited regarding their tangible harms?"
+  },
+  {
+    "id": "speech-30",
+    "q": "How does social discourse divide on whether religious exemptions to anti-discrimination norms should be treated as protected freedom of conscience or as sanctioned discrimination?"
+  }
+]

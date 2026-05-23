@@ -1,0 +1,221 @@
+{
+  "phase": "phase5_downstream",
+  "runs": [
+    {
+      "name": "default",
+      "output": "phase5_downstream/generations/default.jsonl",
+      "rows": 35,
+      "skipped": true,
+      "sensitivity_config": {
+        "trust_alpha": 0.7,
+        "trust_beta": 0.3,
+        "trust_div_rho": 0.8,
+        "trust_div_mode": "community",
+        "card_gamma": 0.65,
+        "anchor_lambda_structure": 0.45,
+        "anchor_lambda_relevance": 0.35,
+        "anchor_lambda_support": 0.2,
+        "anchor_high_trust_threshold": 0.8
+      },
+      "elapsed_sec": 0.0
+    },
+    {
+      "name": "ab_0.9_0.1",
+      "output": "phase5_downstream/generations/ab_0.9_0.1.jsonl",
+      "rows": 35,
+      "skipped": false,
+      "sensitivity_config": {
+        "trust_alpha": 0.9,
+        "trust_beta": 0.1,
+        "trust_div_rho": 0.8,
+        "trust_div_mode": "community",
+        "card_gamma": 0.65,
+        "anchor_lambda_structure": 0.45,
+        "anchor_lambda_relevance": 0.35,
+        "anchor_lambda_support": 0.2,
+        "anchor_high_trust_threshold": 0.8
+      },
+      "elapsed_sec": 397.33388900756836
+    },
+    {
+      "name": "ab_0.5_0.5",
+      "output": "phase5_downstream/generations/ab_0.5_0.5.jsonl",
+      "rows": 35,
+      "skipped": false,
+      "sensitivity_config": {
+        "trust_alpha": 0.5,
+        "trust_beta": 0.5,
+        "trust_div_rho": 0.8,
+        "trust_div_mode": "community",
+        "card_gamma": 0.65,
+        "anchor_lambda_structure": 0.45,
+        "anchor_lambda_relevance": 0.35,
+        "anchor_lambda_support": 0.2,
+        "anchor_high_trust_threshold": 0.8
+      },
+      "elapsed_sec": 325.29256534576416
+    },
+    {
+      "name": "rho_1.0",
+      "output": "phase5_downstream/generations/rho_1.0.jsonl",
+      "rows": 35,
+      "skipped": false,
+      "sensitivity_config": {
+        "trust_alpha": 0.7,
+        "trust_beta": 0.3,
+        "trust_div_rho": 1.0,
+        "trust_div_mode": "off",
+        "card_gamma": 0.65,
+        "anchor_lambda_structure": 0.45,
+        "anchor_lambda_relevance": 0.35,
+        "anchor_lambda_support": 0.2,
+        "anchor_high_trust_threshold": 0.8
+      },
+      "elapsed_sec": 322.1771457195282
+    },
+    {
+      "name": "rho_0.6",
+      "output": "phase5_downstream/generations/rho_0.6.jsonl",
+      "rows": 35,
+      "skipped": false,
+      "sensitivity_config": {
+        "trust_alpha": 0.7,
+        "trust_beta": 0.3,
+        "trust_div_rho": 0.6,
+        "trust_div_mode": "community",
+        "card_gamma": 0.65,
+        "anchor_lambda_structure": 0.45,
+        "anchor_lambda_relevance": 0.35,
+        "anchor_lambda_support": 0.2,
+        "anchor_high_trust_threshold": 0.8
+      },
+      "elapsed_sec": 344.78155636787415
+    },
+    {
+      "name": "gamma_0.5",
+      "output": "phase5_downstream/generations/gamma_0.5.jsonl",
+      "rows": 35,
+      "skipped": false,
+      "sensitivity_config": {
+        "trust_alpha": 0.7,
+        "trust_beta": 0.3,
+        "trust_div_rho": 0.8,
+        "trust_div_mode": "community",
+        "card_gamma": 0.5,
+        "anchor_lambda_structure": 0.45,
+        "anchor_lambda_relevance": 0.35,
+        "anchor_lambda_support": 0.2,
+        "anchor_high_trust_threshold": 0.8
+      },
+      "elapsed_sec": 362.1799702644348
+    },
+    {
+      "name": "gamma_0.8",
+      "output": "phase5_downstream/generations/gamma_0.8.jsonl",
+      "rows": 35,
+      "skipped": false,
+      "sensitivity_config": {
+        "trust_alpha": 0.7,
+        "trust_beta": 0.3,
+        "trust_div_rho": 0.8,
+        "trust_div_mode": "community",
+        "card_gamma": 0.8,
+        "anchor_lambda_structure": 0.45,
+        "anchor_lambda_relevance": 0.35,
+        "anchor_lambda_support": 0.2,
+        "anchor_high_trust_threshold": 0.8
+      },
+      "elapsed_sec": 360.2158987522125
+    },
+    {
+      "name": "anchor_relevance_heavy",
+      "output": "phase5_downstream/generations/anchor_relevance_heavy.jsonl",
+      "rows": 35,
+      "skipped": false,
+      "sensitivity_config": {
+        "trust_alpha": 0.7,
+        "trust_beta": 0.3,
+        "trust_div_rho": 0.8,
+        "trust_div_mode": "community",
+        "card_gamma": 0.65,
+        "anchor_lambda_structure": 0.25,
+        "anchor_lambda_relevance": 0.6,
+        "anchor_lambda_support": 0.15,
+        "anchor_high_trust_threshold": 0.8
+      },
+      "elapsed_sec": 429.0937271118164
+    },
+    {
+      "name": "anchor_support_heavy",
+      "output": "phase5_downstream/generations/anchor_support_heavy.jsonl",
+      "rows": 35,
+      "skipped": false,
+      "sensitivity_config": {
+        "trust_alpha": 0.7,
+        "trust_beta": 0.3,
+        "trust_div_rho": 0.8,
+        "trust_div_mode": "community",
+        "card_gamma": 0.65,
+        "anchor_lambda_structure": 0.3,
+        "anchor_lambda_relevance": 0.25,
+        "anchor_lambda_support": 0.45,
+        "anchor_high_trust_threshold": 0.8
+      },
+      "elapsed_sec": 456.8479816913605
+    },
+    {
+      "name": "anchor_no_support",
+      "output": "phase5_downstream/generations/anchor_no_support.jsonl",
+      "rows": 35,
+      "skipped": false,
+      "sensitivity_config": {
+        "trust_alpha": 0.7,
+        "trust_beta": 0.3,
+        "trust_div_rho": 0.8,
+        "trust_div_mode": "community",
+        "card_gamma": 0.65,
+        "anchor_lambda_structure": 0.55,
+        "anchor_lambda_relevance": 0.45,
+        "anchor_lambda_support": 0.0,
+        "anchor_high_trust_threshold": 0.8
+      },
+      "elapsed_sec": 418.5718660354614
+    },
+    {
+      "name": "tau_anchor_0.70",
+      "output": "phase5_downstream/generations/tau_anchor_0.70.jsonl",
+      "rows": 35,
+      "skipped": false,
+      "sensitivity_config": {
+        "trust_alpha": 0.7,
+        "trust_beta": 0.3,
+        "trust_div_rho": 0.8,
+        "trust_div_mode": "community",
+        "card_gamma": 0.65,
+        "anchor_lambda_structure": 0.45,
+        "anchor_lambda_relevance": 0.35,
+        "anchor_lambda_support": 0.2,
+        "anchor_high_trust_threshold": 0.7
+      },
+      "elapsed_sec": 425.057421207428
+    },
+    {
+      "name": "tau_anchor_0.85",
+      "output": "phase5_downstream/generations/tau_anchor_0.85.jsonl",
+      "rows": 35,
+      "skipped": false,
+      "sensitivity_config": {
+        "trust_alpha": 0.7,
+        "trust_beta": 0.3,
+        "trust_div_rho": 0.8,
+        "trust_div_mode": "community",
+        "card_gamma": 0.65,
+        "anchor_lambda_structure": 0.45,
+        "anchor_lambda_relevance": 0.35,
+        "anchor_lambda_support": 0.2,
+        "anchor_high_trust_threshold": 0.85
+      },
+      "elapsed_sec": 379.2034752368927
+    }
+  ]
+}

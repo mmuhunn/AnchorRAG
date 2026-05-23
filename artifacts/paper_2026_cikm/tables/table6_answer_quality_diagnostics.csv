@@ -1,0 +1,8 @@
+method,groundedness_gpt4o,groundedness_claude,support_gpt4o,support_claude,utility_gpt4o,utility_claude
+vanilla_rag,.797,.694,.852,.845,.786,.677
+mmr_rag,.792,.665,.840,.834,.783,.664
+graph_retrieval,.792,.667,.865,.862,.783,.666
+r2ag,.766,.637,.698,.687,.750,.614
+reclaim,.751,.562,.700,.579,.709,.513
+grag,.751,.658,.790,.779,.734,.617
+trustrag_anchor,.712,.609,.772,.770,.662,.514

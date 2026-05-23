@@ -1,0 +1,24 @@
+source_name,mbfc_match_name,mbfc_factual_reporting,mbfc_factual_numeric,mbfc_bias_label,mbfc_url,note
+Los Angeles Times,Los Angeles Times,HIGH,4,LEFT-CENTER,https://mediabiasfactcheck.com/los-angeles-times/,major US daily; MBFC High factual
+The Federalist,The Federalist,MIXED,2,RIGHT,https://mediabiasfactcheck.com/the-federalist/,Right-biased opinion site; MBFC Mixed factual
+Pew Research Center,Pew Research Center,VERY HIGH,5,LEAST BIASED,https://mediabiasfactcheck.com/pew-research-center/,non-partisan research institute
+Roll Call,Roll Call,VERY HIGH,5,LEAST BIASED,https://mediabiasfactcheck.com/roll-call/,congressional reporting; high factual
+Deseret News,Deseret News,HIGH,4,RIGHT-CENTER,https://mediabiasfactcheck.com/deseret-news/,Utah-based daily; High factual
+Financial Times,Financial Times,HIGH,4,LEFT-CENTER,https://mediabiasfactcheck.com/financial-times/,UK business daily; High factual
+Just The News,Just The News,MIXED,2,RIGHT,https://mediabiasfactcheck.com/just-the-news/,Right-biased news site; MBFC Mixed factual
+Tucker Carlson,Tucker Carlson Network,LOW,1,RIGHT,https://mediabiasfactcheck.com/tucker-carlson-network-bias-and-credibility/,Far-right commentator; Low factual
+SCOTUSblog,SCOTUSblog,VERY HIGH,5,LEAST BIASED,https://mediabiasfactcheck.com/scotusblog/,Supreme Court legal analysis; very high factual
+CNN (Opinion),CNN,MIXED,2,LEFT,https://mediabiasfactcheck.com/cnn/,CNN opinion section; Mixed factual (opinion subsection)
+The Atlantic,The Atlantic,HIGH,4,LEFT,https://mediabiasfactcheck.com/the-atlantic/,Left-leaning magazine; High factual
+CNET,CNET,HIGH,4,LEFT-CENTER,https://mediabiasfactcheck.com/cnet/,tech news; High factual
+Rich Lowry,National Review,MIXED,2,RIGHT,https://mediabiasfactcheck.com/national-review/,National Review editor; treat as NR (Right Mixed)
+AllSides,AllSides,HIGH,4,LEAST BIASED,https://mediabiasfactcheck.com/allsides/,bias rating aggregator; High factual
+New York Times (Opinion),The New York Times,MIXED,2,LEFT-CENTER,https://mediabiasfactcheck.com/new-york-times/,NYT opinion section; Mixed factual (opinion subsection)
+Atlanta Journal-Constitution,The Atlanta Journal-Constitution,HIGH,4,LEFT-CENTER,https://mediabiasfactcheck.com/atlanta-journal-constitution/,major US metro daily; High factual
+Jacobin,Jacobin,MIXED,2,LEFT,https://mediabiasfactcheck.com/jacobin-magazine/,Left magazine; MBFC Mixed factual
+Mother Jones,Mother Jones,HIGH,4,LEFT,https://mediabiasfactcheck.com/mother-jones/,Left investigative; High factual
+ProPublica,ProPublica,VERY HIGH,5,LEFT-CENTER,https://mediabiasfactcheck.com/propublica/,investigative nonprofit; Very High factual
+FactCheck.org,FactCheck.org,VERY HIGH,5,LEAST BIASED,https://mediabiasfactcheck.com/factcheck-org/,fact-checking site; Very High factual
+Columbia Journalism Review,Columbia Journalism Review,HIGH,4,LEFT-CENTER,https://mediabiasfactcheck.com/columbia-journalism-review/,journalism analysis; High factual
+BuzzFeed News,BuzzFeed News,HIGH,4,LEFT,https://mediabiasfactcheck.com/buzzfeed-news/,Left news; High factual
+The Daily Signal,The Daily Signal,MIXED,2,RIGHT,https://mediabiasfactcheck.com/the-daily-signal/,Heritage Foundation outlet; Mixed factual

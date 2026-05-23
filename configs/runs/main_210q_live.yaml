@@ -1,0 +1,90 @@
+name: main_210q_live
+description: Main CIKM 2026 live rerun configuration for seven topics, 210 queries, and seven methods.
+
+topics:
+  - key: abortion
+    display_name: Abortion
+    query_file: data/queries/abortion_30.json
+    graph_file: data/graphs/abortion_scored_graph.json
+  - key: climate_change
+    display_name: Climate Change
+    query_file: data/queries/climate_change_30.json
+    graph_file: data/graphs/climate_change_scored_graph.json
+  - key: economy_jobs
+    display_name: Economy And Jobs
+    query_file: data/queries/economy_jobs_30.json
+    graph_file: data/graphs/economy_jobs_scored_graph.json
+  - key: free_speech
+    display_name: Free Speech
+    query_file: data/queries/free_speech_30.json
+    graph_file: data/graphs/free_speech_scored_graph.json
+  - key: gun_control
+    display_name: Gun Control And Gun Rights
+    query_file: data/queries/gun_control_30.json
+    graph_file: data/graphs/gun_control_scored_graph.json
+  - key: immigration
+    display_name: Immigration
+    query_file: data/queries/immigration_30.json
+    graph_file: data/graphs/immigration_scored_graph.json
+  - key: voting_rights_and_voter_fraud
+    display_name: Voting Rights And Voter Fraud
+    query_file: data/queries/voting_rights_and_voter_fraud_30.json
+    graph_file: data/graphs/voting_rights_and_voter_fraud_scored_graph.json
+
+methods:
+  include:
+    - vanilla_rag
+    - mmr_rag
+    - graph_retrieval
+    - r2ag
+    - reclaim
+    - grag
+    - trustrag_anchor
+  reference_method: trustrag_anchor
+
+retrieval:
+  top_k: 10
+  candidate_pool: 50
+  mmr_lambda: 0.70
+  graph_alpha: 0.70
+  graph_gamma: 0.25
+  graph_delta: 0.05
+  trust_alpha: 0.70
+  trust_beta: 0.30
+  trust_div_rho: 0.80
+  trust_div_mode: community
+  card_gamma: 0.65
+  anchor_lambda_structure: 0.45
+  anchor_lambda_relevance: 0.35
+  anchor_lambda_support: 0.20
+  anchor_high_trust_threshold: 0.80
+
+models:
+  embedding: text-embedding-3-small
+  generator: gpt-4o-2024-08-06
+  planner: gpt-4o-2024-08-06
+  temperature: 0
+
+judging:
+  high_trust_threshold: 0.75
+  backbone_k: 3
+  max_pairwise_evidence_docs: 6
+  primary:
+    provider: openai
+    model: gpt-4o-2024-08-06
+    support_model: gpt-4o-2024-08-06
+    pairwise_model: gpt-4o-2024-08-06
+    skip_pairwise: false
+  robustness:
+    provider: anthropic
+    model: claude-sonnet-4-6
+    support_model: claude-sonnet-4-6
+    pairwise_model: claude-sonnet-4-6
+    skip_pairwise: true
+
+outputs:
+  root: outputs/main_210q_live
+  run_id: main_210q_live
+  generation_jsonl: generation/exp4_eval_data_live_7methods_210q.jsonl
+  cache_dir: cache/embeddings
+  judged_dir: judging

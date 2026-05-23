@@ -1,0 +1,270 @@
+# AnchorRAG CIKM 2026 paper value baseline.
+# Phase 0 inventory freeze created on 2026-05-23.
+#
+# Purpose:
+#   This file records the values printed in the current paper PDF so a later
+#   release audit can compare regenerated tables/figures against the submitted
+#   manuscript.
+
+paper:
+  title: "AnchorRAG: Trust-Aware Evidence Retrieval and Anchor-Guided Synthesis for Controversial Question Answering"
+  venue: "CIKM 2026 submission"
+  current_pdf: "artifacts/paper_2026_cikm/paper_pdf/_CIKM2026__AnchorRAG (13).pdf"
+  current_pdf_sha256: "1df7bc65573c0a0974f6235be58fc151b795db0bd78c6f8c5c3c9ac5b6cd16a7"
+  extraction_basis:
+    - "artifacts/paper_2026_cikm/paper_pdf/_CIKM2026__AnchorRAG (13).pdf"
+    - "AnchorRAG source: docs/CIKM/artifacts_2026_submission/paper_main_v5/overleaf_snapshot/latex/related_work.tex"
+    - "AnchorRAG source: docs/CIKM/artifacts_2026_submission/paper_main_v5/overleaf_snapshot/latex/setup.tex"
+    - "AnchorRAG source: docs/CIKM/artifacts_2026_submission/paper_main_v5/overleaf_snapshot/latex/results.tex"
+
+setup:
+  topics:
+    - "Immigration"
+    - "Gun Control and Gun Rights"
+    - "Economy and Jobs"
+    - "Abortion"
+    - "Free Speech"
+    - "Voting Rights and Voter Fraud"
+    - "Climate Change"
+  queries_per_topic: 30
+  total_queries: 210
+  retrieval_top_k: 10
+  candidate_pool: 50
+  embedding_model: "text-embedding-3-small"
+  generator_model: "gpt-4o"
+  primary_judge: "gpt-4o"
+  robustness_judge: "claude-sonnet-4-6"
+  generation_temperature: 0
+  retrieval_alpha: 0.7
+  retrieval_beta: 0.3
+
+table_1_positioning_matrix:
+  caption_key: "Positioning matrix"
+  columns:
+    - "diversity_aware_selection"
+    - "generator_side_retrieval_or_citation_cue"
+    - "explicit_graph_or_community_structure"
+    - "source_trust_signal_in_retrieval_time_ranking"
+    - "source_trust_signal_exposed_to_generator_structure"
+    - "citeable_article_level_unit_and_source_provenance"
+  rows:
+    vanilla_rag:
+      diversity_aware_selection: false
+      generator_side_retrieval_or_citation_cue: false
+      explicit_graph_or_community_structure: false
+      source_trust_signal_in_retrieval_time_ranking: false
+      source_trust_signal_exposed_to_generator_structure: false
+      citeable_article_level_unit_and_source_provenance: false
+    mmr_rag:
+      diversity_aware_selection: true
+      generator_side_retrieval_or_citation_cue: false
+      explicit_graph_or_community_structure: false
+      source_trust_signal_in_retrieval_time_ranking: false
+      source_trust_signal_exposed_to_generator_structure: false
+      citeable_article_level_unit_and_source_provenance: false
+    graph_retrieval_no_trust:
+      diversity_aware_selection: true
+      generator_side_retrieval_or_citation_cue: false
+      explicit_graph_or_community_structure: true
+      source_trust_signal_in_retrieval_time_ranking: false
+      source_trust_signal_exposed_to_generator_structure: false
+      citeable_article_level_unit_and_source_provenance: true
+    r2ag:
+      diversity_aware_selection: false
+      generator_side_retrieval_or_citation_cue: true
+      explicit_graph_or_community_structure: false
+      source_trust_signal_in_retrieval_time_ranking: false
+      source_trust_signal_exposed_to_generator_structure: false
+      citeable_article_level_unit_and_source_provenance: false
+    reclaim:
+      diversity_aware_selection: false
+      generator_side_retrieval_or_citation_cue: true
+      explicit_graph_or_community_structure: false
+      source_trust_signal_in_retrieval_time_ranking: false
+      source_trust_signal_exposed_to_generator_structure: false
+      citeable_article_level_unit_and_source_provenance: false
+    grag:
+      diversity_aware_selection: false
+      generator_side_retrieval_or_citation_cue: true
+      explicit_graph_or_community_structure: true
+      source_trust_signal_in_retrieval_time_ranking: false
+      source_trust_signal_exposed_to_generator_structure: false
+      citeable_article_level_unit_and_source_provenance: false
+    graphrag:
+      diversity_aware_selection: false
+      generator_side_retrieval_or_citation_cue: false
+      explicit_graph_or_community_structure: true
+      source_trust_signal_in_retrieval_time_ranking: false
+      source_trust_signal_exposed_to_generator_structure: false
+      citeable_article_level_unit_and_source_provenance: false
+    anchorrag:
+      diversity_aware_selection: true
+      generator_side_retrieval_or_citation_cue: true
+      explicit_graph_or_community_structure: true
+      source_trust_signal_in_retrieval_time_ranking: true
+      source_trust_signal_exposed_to_generator_structure: true
+      citeable_article_level_unit_and_source_provenance: true
+
+table_2_community_structure:
+  columns: ["nodes", "edges", "communities", "modularity", "purity"]
+  rows:
+    Immigration: {nodes: 534, edges: 1053, communities: 56, modularity: 0.8630, purity: 0.3895}
+    "Gun Control": {nodes: 282, edges: 550, communities: 32, modularity: 0.8372, purity: 0.3901}
+    "Economy and Jobs": {nodes: 530, edges: 1063, communities: 51, modularity: 0.8860, purity: 0.3887}
+    Abortion: {nodes: 279, edges: 688, communities: 19, modularity: 0.7779, purity: 0.3835}
+    "Free Speech": {nodes: 225, edges: 481, communities: 26, modularity: 0.8177, purity: 0.3689}
+    "Voting Rights": {nodes: 270, edges: 658, communities: 22, modularity: 0.8017, purity: 0.3926}
+    "Climate Change": {nodes: 165, edges: 386, communities: 13, modularity: 0.8188, purity: 0.3697}
+
+table_3_retrieval_side_validation:
+  retrieval_budget_k: 10
+  columns: ["coverage", "community_entropy", "avg_s_trust", "avg_relevance"]
+  rows:
+    semantic_top_k: {coverage: 4.4000, community_entropy: 1.2416, avg_s_trust: 0.7318, avg_relevance: 0.4230}
+    mmr: {coverage: 6.3714, community_entropy: 1.6795, avg_s_trust: 0.7207, avg_relevance: 0.4025}
+    graph_retrieval_no_trust: {coverage: 9.3476, community_entropy: 2.2060, avg_s_trust: 0.7293, avg_relevance: 0.3974}
+    anchorrag: {coverage: 9.4619, community_entropy: 2.2119, avg_s_trust: 0.7624, avg_relevance: 0.3910}
+
+figure_2_source_prior_mbfc_validation:
+  top_sources_requested: 50
+  matched_sources: 49
+  covered_documents: 1779
+  total_documents: 1983
+  corpus_coverage_percent: 89.7
+  spearman: 0.662
+  weighted_spearman: 0.728
+
+table_4_trust_sensitive_evidence_use:
+  n_queries: 210
+  columns: ["citation_coverage", "high_trust_citation_rate", "anchor_utilization_rate", "backbone_trust_rate", "avg_s_trust_at_k"]
+  rows:
+    vanilla_rag: {citation_coverage: 0.3245, high_trust_citation_rate: 0.4061, anchor_utilization_rate: 0.4422, backbone_trust_rate: 0.3937, avg_s_trust_at_k: 0.7326}
+    mmr_rag: {citation_coverage: 0.3607, high_trust_citation_rate: 0.3681, anchor_utilization_rate: 0.6369, backbone_trust_rate: 0.3412, avg_s_trust_at_k: 0.7205}
+    graph_retrieval: {citation_coverage: 0.3457, high_trust_citation_rate: 0.4160, anchor_utilization_rate: 0.8997, backbone_trust_rate: 0.3905, avg_s_trust_at_k: 0.7290}
+    r2ag: {citation_coverage: 0.3365, high_trust_citation_rate: 0.3871, anchor_utilization_rate: 0.4984, backbone_trust_rate: 0.3946, avg_s_trust_at_k: 0.7326}
+    reclaim: {citation_coverage: 0.9344, high_trust_citation_rate: 0.4245, anchor_utilization_rate: 0.4909, backbone_trust_rate: 0.4209, avg_s_trust_at_k: 0.7326}
+    grag: {citation_coverage: 0.3943, high_trust_citation_rate: 0.3964, anchor_utilization_rate: 0.2914, backbone_trust_rate: 0.3875, avg_s_trust_at_k: 0.7318}
+    anchorrag: {citation_coverage: 0.6316, high_trust_citation_rate: 0.6584, anchor_utilization_rate: 0.9180, backbone_trust_rate: 0.6616, avg_s_trust_at_k: 0.7635}
+  significance_marks:
+    anchorrag:
+      high_trust_citation_rate: "**"
+      backbone_trust_rate: "**"
+      avg_s_trust_at_k: "**"
+
+table_5_mbfc_external_rescoring:
+  n_queries: 210
+  columns:
+    - "mbfc_high_trust_citation_rate"
+    - "mbfc_avg_factual_all"
+    - "mbfc_backbone_high_trust_rate"
+    - "mbfc_backbone_avg_factual"
+    - "mbfc_map_coverage"
+  rows:
+    vanilla_rag: {mbfc_high_trust_citation_rate: 0.3790, mbfc_avg_factual_all: 3.2118, mbfc_backbone_high_trust_rate: 0.3464, mbfc_backbone_avg_factual: 3.1476, mbfc_map_coverage: 0.8894}
+    mmr_rag: {mbfc_high_trust_citation_rate: 0.3283, mbfc_avg_factual_all: 3.1009, mbfc_backbone_high_trust_rate: 0.2672, mbfc_backbone_avg_factual: 2.9998, mbfc_map_coverage: 0.8749}
+    graph_retrieval: {mbfc_high_trust_citation_rate: 0.3418, mbfc_avg_factual_all: 3.1461, mbfc_backbone_high_trust_rate: 0.2982, mbfc_backbone_avg_factual: 3.0788, mbfc_map_coverage: 0.8853}
+    r2ag: {mbfc_high_trust_citation_rate: 0.3342, mbfc_avg_factual_all: 3.1340, mbfc_backbone_high_trust_rate: 0.3280, mbfc_backbone_avg_factual: 3.1221, mbfc_map_coverage: 0.8948}
+    reclaim: {mbfc_high_trust_citation_rate: 0.3519, mbfc_avg_factual_all: 3.1939, mbfc_backbone_high_trust_rate: 0.3581, mbfc_backbone_avg_factual: 3.2040, mbfc_map_coverage: 0.8985}
+    grag: {mbfc_high_trust_citation_rate: 0.3449, mbfc_avg_factual_all: 3.1448, mbfc_backbone_high_trust_rate: 0.3228, mbfc_backbone_avg_factual: 3.0792, mbfc_map_coverage: 0.8964}
+    anchorrag: {mbfc_high_trust_citation_rate: 0.4228, mbfc_avg_factual_all: 3.3648, mbfc_backbone_high_trust_rate: 0.4140, mbfc_backbone_avg_factual: 3.3587, mbfc_map_coverage: 0.9308}
+  max_pairwise_p:
+    mbfc_high_trust_citation_rate: 0.078
+    mbfc_avg_factual_all: "<0.001"
+    mbfc_backbone_high_trust_rate: 0.011
+    mbfc_backbone_avg_factual: "<0.001"
+    mbfc_map_coverage: 0.024
+  significance_marks:
+    anchorrag:
+      mbfc_high_trust_citation_rate: "dagger"
+      mbfc_avg_factual_all: "**"
+      mbfc_backbone_high_trust_rate: "*"
+      mbfc_backbone_avg_factual: "**"
+      mbfc_map_coverage: "*"
+
+table_6_answer_quality_diagnostics:
+  columns: ["groundedness_gpt4o", "groundedness_claude", "support_gpt4o", "support_claude", "utility_gpt4o", "utility_claude"]
+  rows:
+    vanilla_rag: {groundedness_gpt4o: 0.797, groundedness_claude: 0.694, support_gpt4o: 0.852, support_claude: 0.845, utility_gpt4o: 0.786, utility_claude: 0.677}
+    mmr_rag: {groundedness_gpt4o: 0.792, groundedness_claude: 0.665, support_gpt4o: 0.840, support_claude: 0.834, utility_gpt4o: 0.783, utility_claude: 0.664}
+    graph_retrieval: {groundedness_gpt4o: 0.792, groundedness_claude: 0.667, support_gpt4o: 0.865, support_claude: 0.862, utility_gpt4o: 0.783, utility_claude: 0.666}
+    r2ag: {groundedness_gpt4o: 0.766, groundedness_claude: 0.637, support_gpt4o: 0.698, support_claude: 0.687, utility_gpt4o: 0.750, utility_claude: 0.614}
+    reclaim: {groundedness_gpt4o: 0.751, groundedness_claude: 0.562, support_gpt4o: 0.700, support_claude: 0.579, utility_gpt4o: 0.709, utility_claude: 0.513}
+    grag: {groundedness_gpt4o: 0.751, groundedness_claude: 0.658, support_gpt4o: 0.790, support_claude: 0.779, utility_gpt4o: 0.734, utility_claude: 0.617}
+    anchorrag: {groundedness_gpt4o: 0.712, groundedness_claude: 0.609, support_gpt4o: 0.772, support_claude: 0.770, utility_gpt4o: 0.662, utility_claude: 0.514}
+
+table_7_top10_trust_advantaged_slice:
+  selection_rule: "largest HT Cite improvement over graph retrieval no trust among cases where citation coverage improves and support is preserved"
+  comparator: "graph_retrieval_no_trust"
+  rows:
+    - {topic: "Abortion", qid: "abo-21", query_summary: "waiting periods, counseling, and informed consent", delta_ht_cite: 1.0000, delta_cite_coverage: 0.9000, support_graph: 1.0000, support_anchorrag: 1.0000}
+    - {topic: "Immigration", qid: "imm-25", query_summary: "second-generation immigrant integration outcomes", delta_ht_cite: 0.8571, delta_cite_coverage: 0.4000, support_graph: 1.0000, support_anchorrag: 1.0000}
+    - {topic: "Gun Control", qid: "gun-05", query_summary: "concealed-carry laws and violent crime", delta_ht_cite: 0.8571, delta_cite_coverage: 0.3333, support_graph: 1.0000, support_anchorrag: 1.0000}
+    - {topic: "Immigration", qid: "imm-20", query_summary: "immigration, population growth, and environmental impact", delta_ht_cite: 0.8571, delta_cite_coverage: 0.2564, support_graph: 1.0000, support_anchorrag: 1.0000}
+    - {topic: "Voting Rights", qid: "vote-14", query_summary: "inactive-voter roll purges and disenfranchisement", delta_ht_cite: 0.8000, delta_cite_coverage: 0.3654, support_graph: 0.8000, support_anchorrag: 1.0000}
+    - {topic: "Climate Change", qid: "clim-21", query_summary: "Paris Agreement costs and benefits", delta_ht_cite: 0.8000, delta_cite_coverage: 0.2667, support_graph: 1.0000, support_anchorrag: 1.0000}
+    - {topic: "Economy and Jobs", qid: "eco-27", query_summary: "infrastructure investment and private-capital crowding out", delta_ht_cite: 0.7143, delta_cite_coverage: 0.5000, support_graph: 0.0000, support_anchorrag: 1.0000}
+    - {topic: "Economy and Jobs", qid: "eco-24", query_summary: "housing prices: zoning restrictions vs speculative investment", delta_ht_cite: 0.7143, delta_cite_coverage: 0.5000, support_graph: 0.0000, support_anchorrag: 1.0000}
+    - {topic: "Gun Control", qid: "gun-11", query_summary: "gun buyback programs and violence reduction", delta_ht_cite: 0.7143, delta_cite_coverage: 0.2500, support_graph: 0.6667, support_anchorrag: 1.0000}
+    - {topic: "Gun Control", qid: "gun-08", query_summary: "school shootings: gun access vs mental health or security", delta_ht_cite: 0.7143, delta_cite_coverage: 0.5000, support_graph: 0.8571, support_anchorrag: 1.0000}
+  average: {delta_ht_cite: 0.8028, delta_cite_coverage: 0.4272, support_graph: 0.7324, support_anchorrag: 1.0000}
+
+figure_3_failure_case:
+  qid: "imm-01"
+  query: "What conflicting evidence exists regarding the effects of immigration on native wages and employment?"
+  comparator: "graph_retrieval_no_trust"
+  graph_retrieval_no_trust:
+    groundedness: 0.85
+    utility: 0.80
+    high_trust_citation_rate: 0.67
+    citation_coverage: 0.23
+    backbone_trust_rate: 0.67
+  anchorrag:
+    groundedness: 0.20
+    utility: 0.15
+    high_trust_citation_rate: 1.00
+    citation_coverage: 0.50
+    backbone_trust_rate: 1.00
+
+table_8_ablation:
+  n_queries: 210
+  columns: ["groundedness", "support", "high_trust_citation_rate", "utility", "backbone_trust", "trust_weighted_claim_support", "claims", "citation_coverage"]
+  rows:
+    vanilla_rag: {groundedness: 0.734, support: 0.645, high_trust_citation_rate: 0.350, utility: 0.677, backbone_trust: 0.348, trust_weighted_claim_support: 0.492, claims: 1.75, citation_coverage: 0.198}
+    wo_trust: {groundedness: 0.749, support: 0.772, high_trust_citation_rate: 0.415, utility: 0.708, backbone_trust: 0.409, trust_weighted_claim_support: 0.587, claims: 2.76, citation_coverage: 0.281}
+    wo_anchor: {groundedness: 0.704, support: 0.802, high_trust_citation_rate: 0.603, utility: 0.640, backbone_trust: 0.608, trust_weighted_claim_support: 0.623, claims: 2.23, citation_coverage: 0.262}
+    wo_diversity: {groundedness: 0.745, support: 0.704, high_trust_citation_rate: 0.530, utility: 0.695, backbone_trust: 0.531, trust_weighted_claim_support: 0.553, claims: 2.05, citation_coverage: 0.221}
+    anchorrag: {groundedness: 0.732, support: 0.793, high_trust_citation_rate: 0.601, utility: 0.682, backbone_trust: 0.613, trust_weighted_claim_support: 0.624, claims: 2.84, citation_coverage: 0.298}
+  multi_anchor_note:
+    support_single_anchor: 0.7927
+    support_multi_anchor: 0.7705
+    trust_weighted_claim_support_single_anchor: 0.6239
+    trust_weighted_claim_support_multi_anchor: 0.6139
+
+section_5_3_sensitivity_text_values:
+  retrieval_weight_sweep:
+    default_alpha_beta: [0.7, 0.3]
+    default_ht_cite: 0.683
+    default_avg_relevance: 0.409
+    trust_heavy_alpha_beta: [0.5, 0.5]
+    trust_heavy_ht_cite: 0.899
+    trust_heavy_avg_relevance: 0.386
+    relevance_heavy_alpha_beta: [0.9, 0.1]
+    relevance_heavy_ht_cite: 0.596
+    relevance_heavy_avg_relevance: 0.423
+  community_penalty:
+    default_rho: 0.8
+    default_coverage: 7.54
+    rho_off: 1.0
+    rho_off_coverage: 4.36
+    rho_off_ht_cite_delta: -0.025
+    strong_penalty_rho: 0.6
+    strong_penalty_coverage: 9.25
+    strong_penalty_avg_relevance: 0.395
+  generation_side_stability:
+    card_gamma_values: [0.5, 0.65, 0.8]
+    card_gamma_ht_cite_change_max: 0.01
+    anchor_lambda_default: [0.45, 0.35, 0.20]
+    anchor_lambda_ht_cite_move_max: 0.02
+    tau_anchor_default: 0.8
+    tau_anchor_alternatives: [0.70, 0.85]
+    tau_anchor_ht_cite_reduction_range: [0.02, 0.03]

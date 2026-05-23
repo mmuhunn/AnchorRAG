@@ -1,0 +1,122 @@
+[
+  {
+    "id": "vote-01",
+    "q": "What evidence is used to argue that voter fraud is widespread versus rare, and how credible are those sources?"
+  },
+  {
+    "id": "vote-02",
+    "q": "How do different perspectives interpret the impact of voter ID laws on voter turnout and election integrity?"
+  },
+  {
+    "id": "vote-03",
+    "q": "What conflicting evidence exists regarding the security and accessibility of mail-in voting?"
+  },
+  {
+    "id": "vote-04",
+    "q": "How do sources interpret evidence on ballot drop boxes and their impact on voter participation or fraud risk?"
+  },
+  {
+    "id": "vote-05",
+    "q": "What evidence is used to argue that voter roll maintenance prevents fraud versus suppresses eligible voters?"
+  },
+  {
+    "id": "vote-06",
+    "q": "How do political actors disagree on the trade-offs between election security measures and voting access?"
+  },
+  {
+    "id": "vote-07",
+    "q": "What evidence is cited on the effect of early voting or same-day registration on voter turnout?"
+  },
+  {
+    "id": "vote-08",
+    "q": "How do commentators differ in assessing partisan gerrymandering and its impact on representativeness?"
+  },
+  {
+    "id": "vote-09",
+    "q": "What conflicting evidence is presented on whether changes to election administration affect public trust?"
+  },
+  {
+    "id": "vote-10",
+    "q": "How do ideological perspectives set the balance between federal oversight and state control in election policy?"
+  },
+  {
+    "id": "vote-11",
+    "q": "How do different interpretations of the National Voter Registration Act (NVRA) influence views on voter access versus election security?"
+  },
+  {
+    "id": "vote-12",
+    "q": "Among claims that electronic voting machine adoption improves election efficiency and concerns about hacking and manipulation risks, what are the key security issues that experts raise?"
+  },
+  {
+    "id": "vote-13",
+    "q": "How do different ideological perspectives assess the effect of automatic voter registration in enhancing democratic participation versus increasing fraud risk?"
+  },
+  {
+    "id": "vote-14",
+    "q": "What conflicting evidence is presented on the impact of purging inactive voters from voter rolls on election accuracy versus voter disenfranchisement?"
+  },
+  {
+    "id": "vote-15",
+    "q": "How do international election observation guidelines and U.S. domestic legal standards conflict or complement each other in assessing the integrity of American elections?"
+  },
+  {
+    "id": "vote-16",
+    "q": "What evidence is used to argue that partisan control of election management bodies influences election outcomes, and how does this argument vary by political ideology?"
+  },
+  {
+    "id": "vote-17",
+    "q": "How do commentators differ in assessing the impact of felon disenfranchisement laws on voter suppression and public safety?"
+  },
+  {
+    "id": "vote-18",
+    "q": "Which perspective—that redistricting reform efforts improve electoral fairness, or that they produce outcomes favorable to certain parties—presents more persuasive evidence?"
+  },
+  {
+    "id": "vote-19",
+    "q": "How do perspectives differ on the role of social media in shaping public perceptions of voter fraud and election legitimacy?"
+  },
+  {
+    "id": "vote-20",
+    "q": "What conflicting evidence exists on the impact of long wait times at polling places on voter turnout and demographic representativeness?"
+  },
+  {
+    "id": "vote-21",
+    "q": "What conflicting evidence exists on the impact of strict signature verification requirements for mail-in ballots on both election security and voter disenfranchisement?"
+  },
+  {
+    "id": "vote-22",
+    "q": "How do different perspectives interpret the impact of campaign finance laws and \"dark money\" disclosure requirements on electoral transparency?"
+  },
+  {
+    "id": "vote-23",
+    "q": "What are the main arguments for and against requiring proof of citizenship for voter registration, and how does this reflect competing views on election security and immigrant rights?"
+  },
+  {
+    "id": "vote-24",
+    "q": "Is Electoral Count Act reform sufficient to address vulnerabilities in the presidential election certification process? Summarize the divergent assessments of legal experts."
+  },
+  {
+    "id": "vote-25",
+    "q": "What evidence is used to argue that polling place consolidation improves administrative efficiency versus suppresses turnout among minority and low-income voters?"
+  },
+  {
+    "id": "vote-26",
+    "q": "What are the contrasting perspectives of election administrators and civil society organizations on third-party voter registration campaigns, and what practical grounds does each side present?"
+  },
+  {
+    "id": "vote-27",
+    "q": "What conflicting evidence exists on whether multilingual ballot requirements and voting assistance enhance democratic inclusivity or create administrative burdens?"
+  },
+  {
+    "id": "vote-28",
+    "q": "What conflicting data exists on whether post-election audits and recounts serve as a mechanism for restoring public trust or unnecessarily fuel distrust?"
+  },
+  {
+    "id": "vote-29",
+    "q": "What are the main arguments for and against expanding voting access for overseas and military voters, and how do these arguments intersect with concerns about ballot security?"
+  },
+  {
+    "id": "vote-30",
+    "q": "How is the Department of Justice's enforcement of voting rights assessed in terms of striking the right balance between its core role in protecting minority rights and criticism that it oversteps state administrative authority?"
+  }
+]

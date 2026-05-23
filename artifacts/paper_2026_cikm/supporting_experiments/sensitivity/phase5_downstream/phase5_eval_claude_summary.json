@@ -1,0 +1,115 @@
+{
+  "phase": "phase5_eval",
+  "judge": "claude",
+  "model": "claude-sonnet-4-6",
+  "runs": [
+    {
+      "name": "default",
+      "judge": "claude",
+      "model": "claude-sonnet-4-6",
+      "out_jsonl": "phase5_downstream/evals_claude/default.jsonl",
+      "out_csv": "phase5_downstream/evals_claude/default.csv",
+      "rc": 0,
+      "elapsed_sec": 435.15343499183655
+    },
+    {
+      "name": "ab_0.9_0.1",
+      "judge": "claude",
+      "model": "claude-sonnet-4-6",
+      "out_jsonl": "phase5_downstream/evals_claude/ab_0.9_0.1.jsonl",
+      "out_csv": "phase5_downstream/evals_claude/ab_0.9_0.1.csv",
+      "rc": 0,
+      "elapsed_sec": 917.4497332572937
+    },
+    {
+      "name": "ab_0.5_0.5",
+      "judge": "claude",
+      "model": "claude-sonnet-4-6",
+      "out_jsonl": "phase5_downstream/evals_claude/ab_0.5_0.5.jsonl",
+      "out_csv": "phase5_downstream/evals_claude/ab_0.5_0.5.csv",
+      "rc": 0,
+      "elapsed_sec": 879.6637134552002
+    },
+    {
+      "name": "rho_1.0",
+      "judge": "claude",
+      "model": "claude-sonnet-4-6",
+      "out_jsonl": "phase5_downstream/evals_claude/rho_1.0.jsonl",
+      "out_csv": "phase5_downstream/evals_claude/rho_1.0.csv",
+      "rc": 0,
+      "elapsed_sec": 930.567400932312
+    },
+    {
+      "name": "rho_0.6",
+      "judge": "claude",
+      "model": "claude-sonnet-4-6",
+      "out_jsonl": "phase5_downstream/evals_claude/rho_0.6.jsonl",
+      "out_csv": "phase5_downstream/evals_claude/rho_0.6.csv",
+      "rc": 0,
+      "elapsed_sec": 980.4260649681091
+    },
+    {
+      "name": "gamma_0.5",
+      "judge": "claude",
+      "model": "claude-sonnet-4-6",
+      "out_jsonl": "phase5_downstream/evals_claude/gamma_0.5.jsonl",
+      "out_csv": "phase5_downstream/evals_claude/gamma_0.5.csv",
+      "rc": 0,
+      "elapsed_sec": 998.0171074867249
+    },
+    {
+      "name": "gamma_0.8",
+      "judge": "claude",
+      "model": "claude-sonnet-4-6",
+      "out_jsonl": "phase5_downstream/evals_claude/gamma_0.8.jsonl",
+      "out_csv": "phase5_downstream/evals_claude/gamma_0.8.csv",
+      "rc": 0,
+      "elapsed_sec": 1041.2753274440765
+    },
+    {
+      "name": "anchor_relevance_heavy",
+      "judge": "claude",
+      "model": "claude-sonnet-4-6",
+      "out_jsonl": "phase5_downstream/evals_claude/anchor_relevance_heavy.jsonl",
+      "out_csv": "phase5_downstream/evals_claude/anchor_relevance_heavy.csv",
+      "rc": 0,
+      "elapsed_sec": 873.0490427017212
+    },
+    {
+      "name": "anchor_support_heavy",
+      "judge": "claude",
+      "model": "claude-sonnet-4-6",
+      "out_jsonl": "phase5_downstream/evals_claude/anchor_support_heavy.jsonl",
+      "out_csv": "phase5_downstream/evals_claude/anchor_support_heavy.csv",
+      "rc": 0,
+      "elapsed_sec": 982.187831401825
+    },
+    {
+      "name": "anchor_no_support",
+      "judge": "claude",
+      "model": "claude-sonnet-4-6",
+      "out_jsonl": "phase5_downstream/evals_claude/anchor_no_support.jsonl",
+      "out_csv": "phase5_downstream/evals_claude/anchor_no_support.csv",
+      "rc": 0,
+      "elapsed_sec": 960.9414863586426
+    },
+    {
+      "name": "tau_anchor_0.70",
+      "judge": "claude",
+      "model": "claude-sonnet-4-6",
+      "out_jsonl": "phase5_downstream/evals_claude/tau_anchor_0.70.jsonl",
+      "out_csv": "phase5_downstream/evals_claude/tau_anchor_0.70.csv",
+      "rc": 0,
+      "elapsed_sec": 949.9445374011993
+    },
+    {
+      "name": "tau_anchor_0.85",
+      "judge": "claude",
+      "model": "claude-sonnet-4-6",
+      "out_jsonl": "phase5_downstream/evals_claude/tau_anchor_0.85.jsonl",
+      "out_csv": "phase5_downstream/evals_claude/tau_anchor_0.85.csv",
+      "rc": 0,
+      "elapsed_sec": 891.1842818260193
+    }
+  ]
+}

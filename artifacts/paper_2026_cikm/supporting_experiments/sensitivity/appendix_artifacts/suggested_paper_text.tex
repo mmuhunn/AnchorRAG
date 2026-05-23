@@ -1,0 +1,15 @@
+%% Phase 6: suggested paper text with filled numbers.
+%% Source: Phase 2 (210q retrieval) + Phase 5 (35q downstream, GPT-4o judge).
+
+%% --- Method/Setup paragraph (default justification with Pareto framing) ---
+We set $\alpha{=}0.7,\beta{=}0.3$ not because relevance is conceptually more important than trust, but because relevance acts as a topicality gate: high-trust but off-topic evidence should not form the answer backbone. Sensitivity analysis (Table~\ref{tab:sensitivity-main}, Appendix~\ref{tab:appendix-phase2}) shows that this setting occupies a Pareto-balanced point: a trust-heavier choice $\alpha{=}0.5,\beta{=}0.5$ raises high-trust citation rate from 0.683 to 0.899 ($+0.216$) but lowers retrieval-side average query relevance from 0.409 to 0.386 ($-5.6\%$), while a relevance-heavier choice $\alpha{=}0.9,\beta{=}0.1$ collapses high-trust citation rate to 0.596 ($-0.088$).
+
+%% --- Diversity penalty paragraph ---
+We use a soft single-step repeat-community penalty $\rho{=}0.8$. Removing diversity ($\rho{=}1.0$, mode off) shrinks community coverage from 7.54 to 4.36 communities at $k{=}10$ and lowers high-trust citation rate by 0.025, while tightening to $\rho{=}0.6$ only marginally widens coverage (9.25 communities) with negligible downstream impact.
+
+%% --- Anchor/card paragraph ---
+For generation-side card and anchor parameters, one-factor sensitivity on a stratified 35-query subset (5/topic $\times$ 7 topics) shows the same directional pattern: cardinality penalty $\gamma\in\{0.5,0.8\}$ changes HT Cite by less than $0.01$, and varying anchor weights $\lambda_{\mathrm{structure}},\lambda_{\mathrm{relevance}},\lambda_{\mathrm{support}}$ across their full reasonable range moves HT Cite by at most $0.02$. The default anchor threshold $\tau_{\mathrm{anchor}}{=}0.8$ is near-optimal: lowering to $0.70$ or raising to $0.85$ both reduce HT Cite by $\approx 0.02$--$0.03$.
+
+%% --- Evaluation threshold paragraph (Phase 4) ---
+The HT Cite ranking is robust to the evaluation-side high-trust threshold (Appendix~\ref{tab:appendix-phase4}): \anchorrag\ is rank-1 on both HT Cite and Backbone Trust at every tested $\tau_{\mathrm{eval}}\in\{0.70,0.75,0.80\}$ and under both GPT-4o and Claude judges.
+

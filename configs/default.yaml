@@ -1,0 +1,31 @@
+paper:
+  artifact_root: artifacts/paper_2026_cikm
+  manifest: artifacts/paper_2026_cikm/MANIFEST.csv
+  paper_values: artifacts/paper_2026_cikm/paper_values.yaml
+
+dataset:
+  query_dir: data/queries
+  graph_dir: data/graphs
+  topics:
+    - abortion
+    - climate_change
+    - economy_jobs
+    - free_speech
+    - gun_control
+    - immigration
+    - voting_rights_and_voter_fraud
+  queries_per_topic: 30
+  total_queries: 210
+
+retrieval:
+  top_k: 10
+  candidate_pool: 50
+  trust_alpha: 0.70
+  trust_beta: 0.30
+
+models:
+  embedding: text-embedding-3-small
+  generator: gpt-4o-2024-08-06
+  primary_judge: gpt-4o-2024-08-06
+  robustness_judge: claude-sonnet-4-6
+  temperature: 0

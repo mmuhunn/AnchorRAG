@@ -1,0 +1,129 @@
+{
+  "phase": "phase5_downstream_sampled",
+  "created_at": "2026-05-19",
+  "method": "trustrag_anchor",
+  "subset": {
+    "n_per_topic": 5,
+    "n_total": 35,
+    "selection_rule": "Generated topics: seed {01,06} + human_curated_expanded {13,20,27}. climate_change: existing_climate {01,07,13,19,25}.",
+    "queries": {
+      "abortion": [
+        {"id": "abo-01", "stratum": "seed"},
+        {"id": "abo-06", "stratum": "seed"},
+        {"id": "abo-13", "stratum": "human_curated_expanded"},
+        {"id": "abo-20", "stratum": "human_curated_expanded"},
+        {"id": "abo-27", "stratum": "human_curated_expanded"}
+      ],
+      "climate_change": [
+        {"id": "clim-01", "stratum": "existing_climate"},
+        {"id": "clim-07", "stratum": "existing_climate"},
+        {"id": "clim-13", "stratum": "existing_climate"},
+        {"id": "clim-19", "stratum": "existing_climate"},
+        {"id": "clim-25", "stratum": "existing_climate"}
+      ],
+      "economy_jobs": [
+        {"id": "eco-01", "stratum": "seed"},
+        {"id": "eco-06", "stratum": "seed"},
+        {"id": "eco-13", "stratum": "human_curated_expanded"},
+        {"id": "eco-20", "stratum": "human_curated_expanded"},
+        {"id": "eco-27", "stratum": "human_curated_expanded"}
+      ],
+      "free_speech": [
+        {"id": "speech-01", "stratum": "seed"},
+        {"id": "speech-06", "stratum": "seed"},
+        {"id": "speech-13", "stratum": "human_curated_expanded"},
+        {"id": "speech-20", "stratum": "human_curated_expanded"},
+        {"id": "speech-27", "stratum": "human_curated_expanded"}
+      ],
+      "gun_control": [
+        {"id": "gun-01", "stratum": "seed"},
+        {"id": "gun-06", "stratum": "seed"},
+        {"id": "gun-13", "stratum": "human_curated_expanded"},
+        {"id": "gun-20", "stratum": "human_curated_expanded"},
+        {"id": "gun-27", "stratum": "human_curated_expanded"}
+      ],
+      "immigration": [
+        {"id": "imm-01", "stratum": "seed"},
+        {"id": "imm-06", "stratum": "seed"},
+        {"id": "imm-13", "stratum": "human_curated_expanded"},
+        {"id": "imm-20", "stratum": "human_curated_expanded"},
+        {"id": "imm-27", "stratum": "human_curated_expanded"}
+      ],
+      "voting_rights_and_voter_fraud": [
+        {"id": "vote-01", "stratum": "seed"},
+        {"id": "vote-06", "stratum": "seed"},
+        {"id": "vote-13", "stratum": "human_curated_expanded"},
+        {"id": "vote-20", "stratum": "human_curated_expanded"},
+        {"id": "vote-27", "stratum": "human_curated_expanded"}
+      ]
+    }
+  },
+  "configs": [
+    {
+      "name": "default",
+      "description": "Reference config (matches main v5 paper)",
+      "overrides": {
+        "trust_alpha": 0.7, "trust_beta": 0.3,
+        "trust_div_rho": 0.8, "trust_div_mode": "community",
+        "card_gamma": 0.65,
+        "anchor_lambda_structure": 0.45, "anchor_lambda_relevance": 0.35, "anchor_lambda_support": 0.20,
+        "anchor_high_trust_threshold": 0.8
+      }
+    },
+    {
+      "name": "ab_0.9_0.1",
+      "description": "alpha/beta: relevance-dominant",
+      "overrides": {"trust_alpha": 0.9, "trust_beta": 0.1}
+    },
+    {
+      "name": "ab_0.5_0.5",
+      "description": "alpha/beta: balanced",
+      "overrides": {"trust_alpha": 0.5, "trust_beta": 0.5}
+    },
+    {
+      "name": "rho_1.0",
+      "description": "rho=1.0 (no diversity penalty)",
+      "overrides": {"trust_div_rho": 1.0, "trust_div_mode": "off"}
+    },
+    {
+      "name": "rho_0.6",
+      "description": "rho=0.6 (stronger diversity)",
+      "overrides": {"trust_div_rho": 0.6}
+    },
+    {
+      "name": "gamma_0.5",
+      "description": "card_gamma=0.5 (less relevance, more trust in card weight)",
+      "overrides": {"card_gamma": 0.5}
+    },
+    {
+      "name": "gamma_0.8",
+      "description": "card_gamma=0.8 (more relevance in card weight)",
+      "overrides": {"card_gamma": 0.8}
+    },
+    {
+      "name": "anchor_relevance_heavy",
+      "description": "anchor lambdas: relevance-heavy (0.25, 0.60, 0.15)",
+      "overrides": {"anchor_lambda_structure": 0.25, "anchor_lambda_relevance": 0.60, "anchor_lambda_support": 0.15}
+    },
+    {
+      "name": "anchor_support_heavy",
+      "description": "anchor lambdas: support-heavy (0.30, 0.25, 0.45)",
+      "overrides": {"anchor_lambda_structure": 0.30, "anchor_lambda_relevance": 0.25, "anchor_lambda_support": 0.45}
+    },
+    {
+      "name": "anchor_no_support",
+      "description": "anchor lambdas: no support term (0.55, 0.45, 0.00)",
+      "overrides": {"anchor_lambda_structure": 0.55, "anchor_lambda_relevance": 0.45, "anchor_lambda_support": 0.00}
+    },
+    {
+      "name": "tau_anchor_0.70",
+      "description": "tau_anchor=0.70",
+      "overrides": {"anchor_high_trust_threshold": 0.70}
+    },
+    {
+      "name": "tau_anchor_0.85",
+      "description": "tau_anchor=0.85",
+      "overrides": {"anchor_high_trust_threshold": 0.85}
+    }
+  ]
+}

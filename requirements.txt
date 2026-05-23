@@ -1,0 +1,13 @@
+anthropic
+matplotlib
+networkx
+nltk
+numpy
+openai
+pandas
+python-dotenv
+pyyaml
+scipy
+scikit-learn
+tiktoken
+tqdm

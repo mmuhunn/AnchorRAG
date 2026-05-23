@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering\small
+\caption{Robustness to evaluation high-trust threshold $\tau_{\mathrm{eval}}$ (Phase~4, 210 queries, GPT-4o judge). HT Cite ranking stable across $\tau_{\mathrm{eval}}\in\{0.70,0.75,0.80\}$; \anchorrag\ holds rank-1 at every threshold.}
+\label{tab:appendix-phase4}
+\begin{tabular}{lccc}
+\toprule
+ & \multicolumn{3}{c}{HT Cite at $\tau_{\mathrm{eval}}$} \\
+\cmidrule(lr){2-4}
+Method & 0.70 & 0.75 & 0.80 \\
+\midrule
+VanillaRAG & 0.6626 & 0.4061 & 0.0606 \\
+VectorRAG & -- & -- & -- \\
+LightRAG & -- & -- & -- \\
+GraphRAG & -- & -- & -- \\
+\trustrag-basic & -- & -- & -- \\
+\trustrag-diverse & -- & -- & -- \\
+\anchorrag & 0.8559 & 0.6584 & 0.1411 \\
+\bottomrule
+\end{tabular}
+\end{table}

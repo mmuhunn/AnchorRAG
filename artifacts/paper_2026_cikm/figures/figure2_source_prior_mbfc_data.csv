@@ -1,0 +1,50 @@
+source_name,mapped_source_name,total_count,current_source_score_mean,mbfc_factual_numeric,mbfc_factual_reporting
+Wall Street Journal (News),The Wall Street Journal,172,0.85,3.0,MOSTLY FACTUAL
+Fox News (Online News),Fox News,125,0.65,2.0,MIXED
+The Hill,The Hill,105,0.7375,3.0,MOSTLY FACTUAL
+Washington Examiner,Washington Examiner,98,0.6255,3.0,MOSTLY FACTUAL
+Reuters,Reuters,97,0.9276,5.0,VERY HIGH
+New York Times (News),The New York Times,90,0.9,4.0,HIGH
+Washington Post,Washington Post,83,0.8664,3.0,MOSTLY FACTUAL
+CNBC,CNBC,79,0.85,3.0,MOSTLY FACTUAL
+Washington Times,Washington Times,67,0.6,2.0,MIXED
+CNN (Online News),CNN,63,0.75,3.0,MOSTLY FACTUAL
+Fox Business,Fox Business,59,0.65,2.0,MIXED
+New York Post (News),New York Post,55,0.6,2.0,MIXED
+Axios,Axios,44,0.7639,4.0,HIGH
+National Review,National Review,43,0.65,3.0,MOSTLY FACTUAL
+HuffPost,HuffPost,39,0.6732,3.0,MOSTLY FACTUAL
+NBC News (Online),NBC News,38,0.85,4.0,HIGH
+Politico,Politico,35,0.75,4.0,HIGH
+The Daily Caller,The Daily Caller,32,0.4431,2.0,MIXED
+CNN Business,CNN,32,0.75,3.0,MOSTLY FACTUAL
+CBS News (Online),CBS News,26,0.85,3.0,MOSTLY FACTUAL
+Townhall,Townhall,26,0.4333,2.0,MIXED
+Newsmax (News),Newsmax,26,0.42,1.0,LOW
+Breitbart News,Breitbart,25,0.3562,2.0,MIXED
+BBC News,BBC,24,0.9,3.0,MOSTLY FACTUAL
+Vox,Vox,20,0.7045,4.0,HIGH
+ABC News (Online),ABC News,19,0.85,4.0,HIGH
+The Epoch Times,The Epoch Times,19,0.4,3.0,MOSTLY FACTUAL
+Bloomberg,Bloomberg News,19,0.85,3.0,MOSTLY FACTUAL
+Forbes,Forbes,17,0.8125,3.0,MOSTLY FACTUAL
+Associated Press Fact Check,Associated Press,16,0.9,4.0,HIGH
+The Guardian,The Guardian,16,0.7636,4.0,HIGH
+Associated Press,Associated Press,15,0.9333,4.0,HIGH
+Newsweek,Newsweek,15,0.7208,3.0,MOSTLY FACTUAL
+NPR (Online News),NPR,14,0.8499,4.0,HIGH
+Christian Science Monitor,Christian Science Monitor,13,0.85,4.0,HIGH
+The Daily Wire,The Daily Wire,11,0.525,2.0,MIXED
+Yahoo News,Yahoo News,11,0.7,4.0,HIGH
+Wall Street Journal (Opinion),The Wall Street Journal,10,0.7,3.0,MOSTLY FACTUAL
+Reason,Reason,10,0.6687,4.0,HIGH
+USA TODAY,USA TODAY,9,0.825,3.0,MOSTLY FACTUAL
+MarketWatch,MarketWatch,9,0.75,4.0,HIGH
+NewsNation,NewsNation,8,0.7,4.0,HIGH
+Washington Free Beacon,Washington Free Beacon,7,0.56,2.0,MIXED
+The Texas Tribune,The Texas Tribune,7,0.8215,4.0,HIGH
+The Blaze,The Blaze,7,0.4,2.0,MIXED
+Salon,Salon,6,0.65,3.0,MOSTLY FACTUAL
+CBN,Christian Broadcasting Network (CBN),6,0.69,2.0,MIXED
+Chicago Tribune,Chicago Tribune,6,0.8001,4.0,HIGH
+Fortune,Fortune Magazine,6,0.7625,4.0,HIGH
