@@ -275,7 +275,6 @@ def audit_supporting_experiments(data: dict) -> list[str]:
         support / "ablation_210q/multi_anchor_note.csv",
         support / "sensitivity/compact_sensitivity_values.csv",
         support / "sensitivity/appendix_artifacts/main_compact_table.tex",
-        support / "cross_judge_agreement/2026-05-09_210q_pairwise_diagnosis_and_paper_updates.md",
         support / "mssr_verifier_tradeoff/2026-05-14_mssr_verifier_tradeoff_memo.md",
         support / "per_topic_diagnostics/2026-04-23_exp4_case_study_3cases.md",
         support / "top2_anchor_negative_result/2026-04-23_exp4_ablation_feedback_followup.md",

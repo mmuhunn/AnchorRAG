@@ -74,7 +74,7 @@ judging:
     model: gpt-4o-2024-08-06
     support_model: gpt-4o-2024-08-06
     pairwise_model: gpt-4o-2024-08-06
-    skip_pairwise: false
+    skip_pairwise: true
   robustness:
     provider: anthropic
     model: claude-sonnet-4-6
