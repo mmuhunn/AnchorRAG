@@ -3,11 +3,11 @@
 Phase 2.1 (plan v3). Computes per-method-pair, per-metric statistical tests on the
 210-query paired score matrix. AnchorRAG (trustrag_anchor) is the reference method.
 
-Inputs:
+Inputs (resolved relative to artifacts/paper_2026_cikm/):
   - Per-query judged eval scores (1470 records = 7 methods x 210 q):
-      AllSides_Qbias/exp4/eval_v6_7methods_210q_gpt4o_20260509.jsonl
+      source_results/eval_v5_7methods_210q_gpt4o_20260508.jsonl
   - Per-query MBFC external scores (1470 records):
-      AllSides_Qbias/exp4/mbfc_external_eval_per_query_20260513.csv
+      supporting_experiments/mbfc_external_validation/mbfc_external_eval_per_query_20260513.csv
 
 Outputs:
   - Long-form CSV with one row per (reference, comparison, metric):
@@ -28,10 +28,10 @@ from statistics import mean
 ROOT = Path(__file__).resolve().parent
 PROJECT_ROOT = ROOT.parent.parent
 
-EVAL_JSONL = PROJECT_ROOT / "AllSides_Qbias/exp4/eval_v6_7methods_210q_gpt4o_20260509.jsonl"
-MBFC_PERQ_CSV = PROJECT_ROOT / "AllSides_Qbias/exp4/mbfc_external_eval_per_query_20260513.csv"
+EVAL_JSONL = PROJECT_ROOT / "source_results/eval_v5_7methods_210q_gpt4o_20260508.jsonl"
+MBFC_PERQ_CSV = PROJECT_ROOT / "supporting_experiments/mbfc_external_validation/mbfc_external_eval_per_query_20260513.csv"
 
-OUT_STATS_CSV = PROJECT_ROOT / "AllSides_Qbias/exp4/stat_tests_20260513.csv"
+OUT_STATS_CSV = PROJECT_ROOT / "supporting_experiments/statistical_tests/stat_tests_20260513.csv"
 
 REFERENCE_METHOD = "trustrag_anchor"
 

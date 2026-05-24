@@ -205,7 +205,7 @@ Return ONLY valid JSON:
 TOPIC_CONFIGS = {
     "immigration": {
         "display_name": "Immigration",
-        "graph_path": str(PROJECT_DIR / "ablation_study" / "graph_allsides_immigration_scored.json"),
+        "graph_path": str(PROJECT_DIR / "graphs" / "immigration_scored_graph.json"),
         "queries": [
             {
                 "id": "imm-01",
@@ -251,7 +251,7 @@ TOPIC_CONFIGS = {
     },
     "gun_control": {
         "display_name": "Gun Control And Gun Rights",
-        "graph_path": str(PROJECT_DIR / "ablation_study_gun_control" / "graph_allsides_gun_control_scored.json"),
+        "graph_path": str(PROJECT_DIR / "graphs" / "gun_control_scored_graph.json"),
         "queries": [
             {
                 "id": "gun-01",
@@ -297,7 +297,7 @@ TOPIC_CONFIGS = {
     },
     "economy_jobs": {
         "display_name": "Economy And Jobs",
-        "graph_path": str(PROJECT_DIR / "ablation_study_economy_jobs" / "graph_allsides_economy_jobs_scored.json"),
+        "graph_path": str(PROJECT_DIR / "graphs" / "economy_jobs_scored_graph.json"),
         "queries": [
             {
                 "id": "eco-01",
@@ -343,7 +343,7 @@ TOPIC_CONFIGS = {
     },
     "abortion": {
         "display_name": "Abortion",
-        "graph_path": str(PROJECT_DIR / "exp1_additional_topics" / "graph_allsides_abortion_scored.json"),
+        "graph_path": str(PROJECT_DIR / "graphs" / "abortion_scored_graph.json"),
         "queries": [
             {
                 "id": "abo-01",
@@ -389,7 +389,7 @@ TOPIC_CONFIGS = {
     },
     "free_speech": {
         "display_name": "Free Speech",
-        "graph_path": str(PROJECT_DIR / "exp1_additional_topics" / "graph_allsides_free_speech_scored.json"),
+        "graph_path": str(PROJECT_DIR / "graphs" / "free_speech_scored_graph.json"),
         "queries": [
             {
                 "id": "speech-01",
@@ -435,7 +435,7 @@ TOPIC_CONFIGS = {
     },
     "voting_rights_and_voter_fraud": {
         "display_name": "Voting Rights And Voter Fraud",
-        "graph_path": str(PROJECT_DIR / "exp1_additional_topics" / "graph_allsides_voting_rights_and_voter_fraud_scored.json"),
+        "graph_path": str(PROJECT_DIR / "graphs" / "voting_rights_and_voter_fraud_scored_graph.json"),
         "queries": [
             {
                 "id": "vote-01",

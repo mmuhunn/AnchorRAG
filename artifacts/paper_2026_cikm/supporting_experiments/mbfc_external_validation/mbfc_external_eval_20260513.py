@@ -4,13 +4,13 @@ Re-computes High-Trust Citation Rate and Backbone Trust using MBFC factual
 reporting labels as an external source-factuality proxy, instead of the internal S_trust
 proxy. Addresses the circularity concern raised in the revision plan.
 
-Inputs:
+Inputs (resolved relative to artifacts/paper_2026_cikm/):
   - Raw 210q output (gives card_id -> source mapping per method):
-      AllSides_Qbias/exp4/exp4_eval_data_v6_7methods_210q_20260509.jsonl
+      source_results/exp4_eval_data_v5_7methods_210q_20260508.jsonl
   - Judged eval output (gives support_checks per method/query):
-      AllSides_Qbias/exp4/eval_v6_7methods_210q_gpt4o_20260509.jsonl
+      source_results/eval_v5_7methods_210q_gpt4o_20260508.jsonl
   - MBFC mapping (source_name -> mbfc_factual_numeric in 1..5):
-      AllSides_Qbias/source_validation/mbfc_validation_top50.csv
+      supporting_experiments/source_prior_validation/mbfc_validation_top50.csv
 
 Outputs:
   - Per (method, query): mbfc_external_eval_per_query_20260513.csv
@@ -31,15 +31,15 @@ from typing import Iterable
 ROOT = Path(__file__).resolve().parent
 PROJECT_ROOT = ROOT.parent.parent
 
-RAW_JSONL = PROJECT_ROOT / "AllSides_Qbias/exp4/exp4_eval_data_v6_7methods_210q_20260509.jsonl"
-EVAL_JSONL = PROJECT_ROOT / "AllSides_Qbias/exp4/eval_v6_7methods_210q_gpt4o_20260509.jsonl"
-MBFC_CSV = PROJECT_ROOT / "AllSides_Qbias/source_validation/mbfc_validation_top50.csv"
-MBFC_EXT_CSV = PROJECT_ROOT / "AllSides_Qbias/source_validation/mbfc_extension_20260513.csv"
+RAW_JSONL = PROJECT_ROOT / "source_results/exp4_eval_data_v5_7methods_210q_20260508.jsonl"
+EVAL_JSONL = PROJECT_ROOT / "source_results/eval_v5_7methods_210q_gpt4o_20260508.jsonl"
+MBFC_CSV = PROJECT_ROOT / "supporting_experiments/source_prior_validation/mbfc_validation_top50.csv"
+MBFC_EXT_CSV = PROJECT_ROOT / "supporting_experiments/source_prior_validation/mbfc_extension_20260513.csv"
 
-OUT_PER_QUERY = PROJECT_ROOT / "AllSides_Qbias/exp4/mbfc_external_eval_per_query_20260513.csv"
-OUT_SUMMARY = PROJECT_ROOT / "AllSides_Qbias/exp4/mbfc_external_eval_summary_20260513.csv"
-OUT_BY_TOPIC = PROJECT_ROOT / "AllSides_Qbias/exp4/mbfc_external_eval_by_topic_20260513.csv"
-OUT_UNMAPPED = PROJECT_ROOT / "AllSides_Qbias/exp4/mbfc_external_eval_unmapped_sources_20260513.csv"
+OUT_PER_QUERY = PROJECT_ROOT / "supporting_experiments/mbfc_external_validation/mbfc_external_eval_per_query_20260513.csv"
+OUT_SUMMARY = PROJECT_ROOT / "supporting_experiments/mbfc_external_validation/mbfc_external_eval_summary_20260513.csv"
+OUT_BY_TOPIC = PROJECT_ROOT / "supporting_experiments/mbfc_external_validation/mbfc_external_eval_by_topic_20260513.csv"
+OUT_UNMAPPED = PROJECT_ROOT / "supporting_experiments/mbfc_external_validation/mbfc_external_eval_unmapped_sources_20260513.csv"
 
 BACKBONE_K_DEFAULT = 3
 HT_THRESHOLD_DEFAULT = 4  # 4 = "High", 5 = "Very High" in MBFC
