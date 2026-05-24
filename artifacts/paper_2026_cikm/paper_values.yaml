@@ -13,9 +13,6 @@ paper:
   current_pdf_sha256: "1df7bc65573c0a0974f6235be58fc151b795db0bd78c6f8c5c3c9ac5b6cd16a7"
   extraction_basis:
     - "artifacts/paper_2026_cikm/paper_pdf/_CIKM2026__AnchorRAG (13).pdf"
-    - "AnchorRAG source: docs/CIKM/artifacts_2026_submission/paper_main_v5/overleaf_snapshot/latex/related_work.tex"
-    - "AnchorRAG source: docs/CIKM/artifacts_2026_submission/paper_main_v5/overleaf_snapshot/latex/setup.tex"
-    - "AnchorRAG source: docs/CIKM/artifacts_2026_submission/paper_main_v5/overleaf_snapshot/latex/results.tex"
 
 setup:
   topics:
