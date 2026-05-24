@@ -1,8 +1,7 @@
 method,citation_coverage,high_trust_citation_rate,anchor_utilization_rate,backbone_trust_rate,avg_s_trust_at_k
 vanilla_rag,0.3245,0.4061,0.4422,0.3937,0.7326
 mmr_rag,0.3607,0.3681,0.6369,0.3412,0.7205
-graph_retrieval,0.3457,0.4160,0.8997,0.3905,0.7290
 r2ag,0.3365,0.3871,0.4984,0.3946,0.7326
 reclaim,0.9344,0.4245,0.4909,0.4209,0.7326
-grag,0.3943,0.3964,0.2914,0.3875,0.7318
-trustrag_anchor,0.6316,0.6584,0.9180,0.6616,0.7635
+grag,0.3917,0.5908,0.2849,0.5788,0.7743
+trustrag_anchor,0.6412,0.7807,0.8716,0.7837,0.7958

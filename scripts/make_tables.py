@@ -18,7 +18,16 @@ SOURCE = ARTIFACT / "source_results"
 TABLES = ARTIFACT / "tables"
 PAPER_VALUES = ARTIFACT / "paper_values.yaml"
 
-METHOD_ORDER = [
+METHOD_ORDER_MAIN = [
+    "vanilla_rag",
+    "mmr_rag",
+    "r2ag",
+    "reclaim",
+    "grag",
+    "trustrag_anchor",
+]
+
+METHOD_ORDER_DIAG = [
     "vanilla_rag",
     "mmr_rag",
     "graph_retrieval",
@@ -31,7 +40,7 @@ METHOD_ORDER = [
 DISPLAY = {
     "vanilla_rag": "vanilla rag",
     "mmr_rag": "mmr rag",
-    "graph_retrieval": "graph ctrl.",
+    "graph_retrieval": "GL-RAG",
     "r2ag": "R2AG",
     "reclaim": "ReClaim",
     "grag": "GRAG",
@@ -118,7 +127,7 @@ def make_table4(values: dict) -> None:
     rows: list[dict[str, object]] = []
     tex_rows: list[list[object]] = []
     baseline = values["table_4_trust_sensitive_evidence_use"]["rows"]
-    for method in METHOD_ORDER:
+    for method in METHOD_ORDER_MAIN:
         src = summary[method]
         out = {
             "method": method,
@@ -158,7 +167,7 @@ def make_table5(values: dict) -> None:
     out_rows: list[dict[str, object]] = []
     tex_rows: list[list[object]] = []
     baseline = values["table_5_mbfc_external_rescoring"]["rows"]
-    for method in METHOD_ORDER:
+    for method in METHOD_ORDER_MAIN:
         src = rows_by_method[method]
         out = {"method": method}
         for public_field, source_field in field_map:
@@ -200,7 +209,7 @@ def make_table6(values: dict) -> None:
     out_rows: list[dict[str, object]] = []
     tex_rows: list[list[object]] = []
     baseline = values["table_6_answer_quality_diagnostics"]["rows"]
-    for method in METHOD_ORDER:
+    for method in METHOD_ORDER_DIAG:
         out = {"method": method}
         for public_field, source_rows, source_field in metric_pairs:
             out[public_field] = fmt3(source_rows[method][source_field])

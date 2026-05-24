@@ -1,6 +1,6 @@
 method,groundedness,support,high_trust_citation_rate,utility,backbone_trust,trust_weighted_claim_support,claims,citation_coverage
-vanilla_rag,.734,.645,.350,.677,.348,.492,1.75,.198
-wo_trust,.749,.772,.415,.708,.409,.587,2.76,.281
-wo_anchor,.704,.802,.603,.640,.608,.623,2.23,.262
-wo_diversity,.745,.704,.530,.695,.531,.553,2.05,.221
-trustrag_anchor,.732,.793,.601,.682,.613,.624,2.84,.298
+vanilla_rag,.740,.697,.532,.682,.536,.553,1.76,.200
+wo_trust,.750,.828,.592,.712,.599,.651,2.98,.301
+wo_anchor,.724,.818,.729,.663,.735,.671,2.22,.261
+wo_diversity,.746,.728,.663,.701,.662,.602,2.12,.226
+trustrag_anchor,.736,.809,.738,.686,.752,.668,2.98,.307

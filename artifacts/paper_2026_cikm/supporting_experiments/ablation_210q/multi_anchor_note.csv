@@ -1,5 +1,5 @@
 metric,value
-support_single_anchor,.7927
-support_multi_anchor,.7705
-trust_weighted_claim_support_single_anchor,.6239
-trust_weighted_claim_support_multi_anchor,.6139
+support_single_anchor,.8089
+support_multi_anchor,.7959
+trust_weighted_claim_support_single_anchor,.6677
+trust_weighted_claim_support_multi_anchor,.6558

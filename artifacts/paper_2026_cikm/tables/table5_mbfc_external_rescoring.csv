@@ -1,8 +1,7 @@
 method,mbfc_high_trust_citation_rate,mbfc_avg_factual_all,mbfc_backbone_high_trust_rate,mbfc_backbone_avg_factual,mbfc_map_coverage
 vanilla_rag,0.3790,3.2118,0.3464,3.1476,0.8894
 mmr_rag,0.3283,3.1009,0.2672,2.9998,0.8749
-graph_retrieval,0.3418,3.1461,0.2982,3.0788,0.8853
 r2ag,0.3342,3.1340,0.3280,3.1221,0.8948
 reclaim,0.3519,3.1939,0.3581,3.2040,0.8985
-grag,0.3449,3.1448,0.3228,3.0792,0.8964
-trustrag_anchor,0.4228,3.3648,0.4140,3.3587,0.9308
+grag,0.3417,3.1465,0.3295,3.1092,0.8866
+trustrag_anchor,0.4554,3.4306,0.4557,3.4346,0.9214
